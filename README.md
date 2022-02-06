@@ -14,3 +14,11 @@ If your project contains a Makefile:
 ```
 docker run -v`pwd`:/project xc32 make
 ```
+
+# Platforms
+## xc32
+* Latest version from Microchip
+
+## stm32
+* gcc-arm-none-eabi
+* libopencm3 installed in /opt/libopencm3
