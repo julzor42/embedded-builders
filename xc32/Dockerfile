@@ -25,13 +25,10 @@ RUN curl -fSL -o /tmp/xc32.run "https://www.microchip.com/mplabxc32linux" \
         --netservername localhost --LicenseType FreeMode --prefix /opt/microchip/xc32 \
     && rm /tmp/xc32.run
 
-# Dowload additionnal libraries
-RUN git clone https://github.com/julzor42/core32 /opt/core32
+RUN useradd user
+USER user
 
 VOLUME /project
 WORKDIR /project
-
-RUN useradd user
-USER user
 
 RUN [ -x /opt/microchip/xc32/bin/xc32-gcc ] && xc32-gcc --version

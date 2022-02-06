@@ -12,10 +12,5 @@ docker build -t xc32 .
 ## Build a project
 If your project contains a Makefile:
 ```
-docker run -it --rm --privileged -v`pwd`:/project xc32 make
+docker run -v`pwd`:/project xc32 make
 ```
-
-## Platforms
-### XC32
-* Downloads an install the latest version of xc32-gcc from Microchip
-* Downloads the Core32 PIC32 from git to /opt/core32
