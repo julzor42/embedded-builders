@@ -6,7 +6,7 @@ Microchip PIC32, STM32 or ESP32 based projects *(WIP)*.
 ## Build the images
 ### XC32
 ```
-docker build -t xc32 github.com/julzor42/embedded-builders/xc32
+docker build -t xc32 .
 ```
 
 ## Build a project
